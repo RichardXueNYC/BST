@@ -4,8 +4,6 @@
 
 import java.io.*;
 import java.util.*;               
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDPage;
 
 class Node
    {
@@ -431,12 +429,7 @@ class TreesApplication
    
       theTree.isBST(theTree.rootgetter());//isBST, works
 
-	  PDDocument document = new PDDocument();
-      document.addPage(new PDPage());
-      document.save("C:/Desktop/TreePDF.pdf");
-      
-      System.out.println("PDF created");
-      document.close();
+	
 // -------------------------------------------------------------
    }
 }  // end class TreeApp
